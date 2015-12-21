@@ -1,16 +1,23 @@
+/* 通用样式 */
+
 body {
-	font-size: x-small;
 	max-width: 1280px;
 	margin: 0 auto;
+	font-size: 13px;
 }
-
 .clearfix:after {
 	content: ".";
 	display: block;
+	clear: both;
 	height: 0;
 	overflow: hidden;
-	clear: both;
 	visibility: hidden;
+}
+a {
+	color: #666;
+}
+a:hover {
+	color: #000;
 }
 
 /* 头部样式 */
@@ -19,41 +26,41 @@ body {
 	height: 35px;
 	background-color: #000;
 }
-#header {
-	width: 80%;
+#header-main {
 	position: relative;
+	width: 960px;
 	margin: 0 auto;
 	padding-top: 14px;
 	padding-bottom: 10px;
 }
-#header>ul {
+#header-main>ul {
 	position: absolute;
 	right: 10px;
 	top: 10px;
 	list-style: none;
 	font-size: 0;
 }
-#header>ul>li {
+#header-main>ul>li {
 	font-size: x-small;
 
 	padding: 0px 0px 10px 10px;
 	display: inline-block;
 }
-#header>ul>li>a {
+#header-main>ul>li>a {
 	border-right: 1px solid #999999;
 	padding-right: 10px;
 }
 
-.drop-down-menu a {
+.dropdown-menu a {
 	display: block;
 
 }
 
-.drop-down-menu img {
+.dropdown-menu img {
 	padding-bottom: 1px;
 	padding-left: 6px;
 }
-#header .sub-menu {
+#header-main .sub-menu {
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -64,14 +71,14 @@ body {
 	background-color:white;
 	margin-top: 10px;
 }
-#header .sub-menu li {
+#header-main .sub-menu li {
 	width: 100px;
 	height: 30px;
 	border-bottom: 1px solid #e6e6e6;
 	line-height: 30px;
 	padding-left: 10px;
 }
-#header .sub-menu li:hover {
+#header-main .sub-menu li:hover {
 	background-color: #eeeeee;
 }
 
@@ -83,7 +90,7 @@ body {
 }
 .nav>div {
 	position: relative;
-	width: 80%;
+	width: 960px;
 	height: 40px;
 	margin: 0 auto;
 }
@@ -176,6 +183,9 @@ body {
 #search-bar>form>div>input:hover {
 	background: #003366;
 }
+#search-bar .noFocus:focus{
+	outline:none;
+}
 
 
 
@@ -211,6 +221,7 @@ body {
 	z-index: 3000; 
 	color: #ccc;
 	font-size: 40px;
+	white-space: nowrap;
 }
 .big-pic .bg {
 	width: 100%;

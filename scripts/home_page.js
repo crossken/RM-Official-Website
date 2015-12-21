@@ -6,7 +6,7 @@ $(function() {
 	});
 
 	// 下拉菜单
-	$('.drop-down-menu').mouseover(function(){
+	$('.dropdown-menu').mouseover(function(){
 		$(this).find('ul').stop().show('fast');
 	}).mouseout(function(){
 		$(this).find('ul').stop().hide('fast');
@@ -20,6 +20,9 @@ $(function() {
 			return false;
 		});
 	});
+	// $('#search-img :text').focus(function() {
+	// 	$(this).css('outline', 'none');
+	// });
 
 
 

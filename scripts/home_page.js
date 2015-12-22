@@ -57,9 +57,16 @@ $(function() {
 		movePic();
 	});
 
+
+	// 固定顶栏
+	$navLogo = $('.nav-logo');
+	$navLogo.hide();
+	var navState = false;
 	window.onscroll = function () {
 		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		if (scrollTop >= 117) {
+		// console.log(navState);
+		if ((scrollTop >= 117)&&(!navState)) {
+			// alert(navState);
 			$('.nav').css({
 				position: 'fixed',
 				top: 0,
@@ -67,12 +74,21 @@ $(function() {
 				zIndex:9999,
 				borderBottom:'1px solid #ccc'
 			});
+
+			$navLogo.show('slow');
+
+			navState = true;
 		}
+
 		if (scrollTop < 117) {
+
 			$('.nav').css({
 				position: 'static',
 			});
+			navState = false;
+			$navLogo.hide();
 		}
+
 	}
 
 });

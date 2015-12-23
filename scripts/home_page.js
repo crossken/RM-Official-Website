@@ -21,12 +21,10 @@ $(function() {
 		});
 	});
 
-
-
 	// 轮播头图
-
 	$smallPic = $('.small-pic');
 	$bigPic = $('.big-pic');
+	$text = $('.text');
 
 	var titles =[
 	"西甲第4轮：皇家马德里7:1希洪竞技",
@@ -40,7 +38,7 @@ $(function() {
 		zIndex++;
 		$smallPic.find('li').eq(index).addClass('nowpic').siblings().removeClass();
 		$bigPic.find('li').eq(index).hide().css('zIndex', zIndex).show('slow');
-		$('.text').html(titles[index]);
+		$text.html(titles[index]);
 	}
 
 	var index = 0;
@@ -56,8 +54,6 @@ $(function() {
 		index = $(this).index()-1;
 		movePic();
 	});
-
-
 
 	// 固定导航栏
 	$nav = $('#nav');
@@ -77,7 +73,7 @@ $(function() {
 		}
 	});
 
-	//主内容区
+	//主内容区图片
 	$('.col-main article').mouseover(function() {
 		$(this).find('img').stop().animate({opacity: '0.5'}, '400');
 	}).mouseout(function() {
@@ -88,11 +84,13 @@ $(function() {
 	var cupNo = 0;
 	$gallery = $('#cups ul');
 	$cups = $gallery.find('li');
+	$prevCup = $('#cups .prev');
+	$nextCup = $('#cups .next');
 	$gallery.css('width', $cups.length * ($cups.eq(1).width()+1) + 'px');
-	$('#cups .next').click(function() {
+	$nextCup.click(function() {
 		if (!$gallery.is(':animated')) {
 			if (cupNo == 0) {
-				$('#cups .prev').show();
+				$prevCup.show();
 			}
 			$gallery.animate({left: '-=120px'}, 'fast');
 			cupNo++;
@@ -101,10 +99,10 @@ $(function() {
 			}
 		}
 	});
-	$('#cups .prev').click(function() {
+	$prevCup.click(function() {
 		if (!$gallery.is(':animated')) {
 			if (cupNo == $cups.length-8) {
-				$('#cups .next').show();
+				$nextCup.show();
 			}
 			$gallery.animate({left: '+=120px'}, 'fast');
 			cupNo--;
@@ -127,6 +125,4 @@ $(function() {
 	$toTOp.click(function() {
 		$(window).scrollTop(0);
 	});
-
-
 });

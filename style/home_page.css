@@ -14,7 +14,9 @@ a:hover {
 	color: #000;
 }
 
+
 /* 清除浮动 */
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -26,6 +28,7 @@ a:hover {
 
 
 /* 下拉菜单 */
+
 .dropdown-menu {
 	position: relative;
 }
@@ -56,6 +59,7 @@ a:hover {
 
 
 /* 头部样式 */
+
 #header-top {
 	height: 35px;
 	background-color: #000;
@@ -82,7 +86,6 @@ a:hover {
 	border-right: 1px solid #999999;
 	padding-right: 10px;
 }
-
 
 
 /* 导航样式 */
@@ -142,6 +145,7 @@ a:hover {
 
 
 /* 搜索框样式 */
+
 #nav #search-bar {
 	display: none;
 	position: relative;
@@ -197,8 +201,6 @@ a:hover {
 #search-bar a {
 	display: inline;
 }
-
-
 
 
 /* 轮播头图 */
@@ -410,6 +412,7 @@ div#article-headline:hover,div.article-general:hover {
 
 
 /* 日程表 */
+
 #schedule {
 	float: left;
 	width: 300px;
@@ -484,6 +487,7 @@ div#article-headline:hover,div.article-general:hover {
 
 
 /* 内容区块1 */
+
 #first-sec {
 	width: 100%;
 	padding-bottom: 40px;
@@ -523,6 +527,7 @@ div#article-headline:hover,div.article-general:hover {
 
 
 /* 内容区块2 */
+
 #second-sec {
 	width: 100%;
 	padding-top: 120px;
@@ -578,6 +583,7 @@ div#article-headline:hover,div.article-general:hover {
 }
 
 /* 奖杯 */
+
 #cups {
 	width: 100%;
 	height: 300px;
@@ -645,7 +651,9 @@ div#article-headline:hover,div.article-general:hover {
 	border-left: none;
 }
 
+
 /* 页脚 */
+
 #links {
 	height: 290px;
 	width: 100%;
@@ -730,9 +738,9 @@ div#article-headline:hover,div.article-general:hover {
 	top: 0px;
 	width: 43px;
 	height: 43px;
-	background-image: url(../images/totop.png);
-	border-radius: 8px;
 	cursor: pointer;
+	border-radius: 8px;
+	background-image: url(../images/totop.png);
 }
 
 

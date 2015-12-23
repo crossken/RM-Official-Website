@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<title>皇家马德里俱乐部中文官网</title>
 	<meta name="description" content="提供皇家马德里未来比赛信息以及足球俱乐部、比赛、球员、赛程、球票最新消息的官方网站">
 	<meta name="keywords" content="real madrid, real madrid oficial, futbol real madrid, 皇家马德里, 皇马">
@@ -53,7 +54,7 @@
 	</header>
 
 
-	<nav class="nav">
+	<nav id="nav">
 		<div>
 			<ul class="sub-nav-left">
 				<li class="nav-logo"><img src="images/RM_sticky_logo.png" width="21px" height="29px"></li>
@@ -159,7 +160,7 @@
 
 	<!-- 轮播头图 -->
 
-	<div class="play" id="playimages">
+	<section id="playimages">
 		<div class="big-pic">
 			<div class="text">西甲第4轮：皇家马德里7:1希洪竞技</div>
 			<div class="bg"></div>
@@ -176,57 +177,52 @@
 				<li><img src="images/03.jpg"></li>
 			</ul>
 		</div>
-	</div>
+	</section>
 
 	<!-- 页面主体 -->
 	<section class="clearfix" id="content">
 		<!-- 主栏 -->
 		<h1>要闻</h1>
-		<div class="col-main">
-			<div id="article-headline">
+		<section class="col-main">
+			<article id="article-headline">
 				<a href="#"><img src="images/news_01.jpeg" alt="news image"></a>
-				<div class="image-mask"></div>
 				<h3>官方通知</h3>
 				<h2>上诉被驳，皇马无缘国王杯次回合</h2>
 				<div class="share-link"><a href="">分享</a></div>
-			</div>
-			<div class="article-general">
+			</article>
+			<article class="article-general">
 				<a href="#"><img src="images/news_02.jpeg" alt="news image"></a>
-				<div class="image-mask"></div>
 				<h3>新闻</h3>
 				<h2>皇家马德里VS加的斯比赛退票手续声明</h2>
 				<p>退票手续将于12月12日，星期六开始在圣地亚哥·伯纳乌球场中央售票厅办理，办理时间为10:00至19:00。</p>
 				<div class="share-link"><a href="">分享</a></div>
-			</div>
-			<div class="article-general article-gen-right">
+			</article>
+			<article class="article-general article-gen-right">
 				<a href="#"><img src="images/news_03.jpeg" alt="news image"></a>
-				<div class="image-mask"></div>
 				<h3>新闻</h3>
 				<h2>欧冠八分之一决赛对手将于周一揭晓</h2>
 				<p>尤文图斯、埃因霍温、本菲卡、罗马、阿森纳、基辅迪纳摩、根特有可能是皇家马德里下一轮的对手。</p>
 				<div class="share-link"><a href="">分享</a></div>
-			</div>
-			<div class="article-general">
+			</article>
+			<article class="article-general">
 				<a href="#"><img src="images/news_04.jpeg" alt="news image"></a>
-				<div class="image-mask"></div>
 				<h3>新闻</h3>
 				<h2>C罗荣获欧冠第六轮最佳球员</h2>
 				<p>C罗本赛季第三次获得UEFA.com用户最多的票数。</p>
 				<div class="share-link"><a href="">分享</a></div>
-			</div>
-			<div class="article-general article-gen-right">
+			</article>
+			<article class="article-general article-gen-right">
 				<a href="#"><img src="images/news_05.jpg" alt="news image"></a>
-				<div class="image-mask"></div>
 				<h3>关怀</h3>
 				<h2>和难民在一起</h2>
 				<p>照片中一个男童和他的父亲在德国巴维拉火车站。</p>
 				<div class="share-link"><a href="">分享</a></div>
-			</div>
+			</article>
 			<div id="show-news"><a href="">观看全部新闻</a></div>
-		</div>
+		</section>
 
 		<!-- 侧边栏 -->
-		<div id="schedule">
+		<aside id="schedule">
 			<h2><a href="#">日程表</a></h2>
 			<div class="match">				
 				<p class="match-date">13-12-2015 - 20:30</p>
@@ -264,14 +260,15 @@
 					<p class="ticket"><a href="">球票</a></p>
 				</div>
 			</div>
-		</div>
+		</aside>
 		<div class="ad"><img src="images/ad1.jpeg" alt="ad"></div>		
 		<div class="ad"><img src="images/ad2.jpeg" alt="ad"></div>	
 	</section>
 
-	<div id="ad-main"><img src="images/ad.jpeg" alt=""></div>
+	<section id="ad-main"><img src="images/ad.jpeg" alt=""></section>
+
 	<!-- 内容分区1 -->
-	<div id="first-sec">
+	<section id="first-sec">
 		<div class="clearfix">
 			<a href="">
 				<h2>足球历史</h2>
@@ -294,10 +291,10 @@
 				<p>皇家马德里篮球传奇球员</p>
 			</a>
 		</div>
-	</div>
+	</section>
 
 	<!-- 内容分区2 -->
-	<div id="second-sec">
+	<section id="second-sec">
 		<p>特别</p>
 		<div class="clearfix">
 			<a href="">
@@ -322,10 +319,10 @@
 			</a>
 		</div>
 		<a href="">查看更多专题新闻</a>
-	</div>
+	</section>
 
 	<!-- 奖杯 -->
-	<div id="cups">
+	<section id="cups">
 		<div>
 			<div class="prev"></div>
 			<div class="next"></div>
@@ -402,10 +399,10 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</section>
 
 	<!-- 页脚 -->
-	<div id="footer">
+	<section id="links">
 		<div>
 			<ul>
 				<li><a href="">足球</a></li>
@@ -460,15 +457,16 @@
 				<li><a href="">查看全部赞助商</a></li>
 			</ul>
 		</div>
-	</div>
+	</section>
 
-	<div id="footer-bottom">
-		<div id="bgc-image"></div>
+	<footer id="footer">
 		<div>
+			<div id="bgc-image"></div>
 			<span class="footer-left">版权所有皇马&copy;2015年版权所有</span>
 			<span class="footer-right"><a href="">查看全部赞助商</a> · <a href="">免责声明</a> · <a href="">隐私协议</a></span>
 		</div>
-	</div>
+	</footer>
+	<div id="totop"></div>
 	<script src="scripts/home_page.js"></script>
 </body>
 </html>

@@ -274,7 +274,7 @@ a:hover {
 	alpha: filter(opacity=100); 
 }
 .small-pic li.nowpic:after {
-	content: "<span><span>";
+	content: "";
 	display:block;
 	position:absolute;
 	z-index: 3001;
@@ -639,7 +639,7 @@ div#article-headline:hover,div.article-general:hover {
 }
 #cups p {
 	margin-top: 20px;
-	font-size: 25px;
+	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 }

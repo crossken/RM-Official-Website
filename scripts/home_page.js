@@ -123,6 +123,6 @@ $(function() {
 		};
 	});
 	$toTOp.click(function() {
-		$(window).scrollTop(0);
+		$('html,body').animate({scrollTop: '0px'}, 200);
 	});
 });
